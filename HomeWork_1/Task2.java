@@ -59,12 +59,16 @@ public class Task2 {
         System.out.println("Введите длинну массива:");
         int g = number.nextInt();
         int[] array = new int[g];
-        int minRandom = 1;
+        int minRandom;
         int maxRandom;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner min = new Scanner(System.in);
+        System.out.println("Введите минимальное число в массиве:");
+        minRandom = min.nextInt();
+
+        Scanner max = new Scanner(System.in);
         System.out.println("Введите максимальное число в массиве:");
-        maxRandom = scanner.nextInt();
+        maxRandom = max.nextInt();
 
         Random random = new Random(System.currentTimeMillis());
         System.out.print("[ ");
