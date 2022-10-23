@@ -51,6 +51,8 @@ public class Task2 {
         maxRandom = max.nextInt();
 
         Random random = new Random(System.currentTimeMillis());
+        System.out.print("Не отсортированно:");
+        System.out.println();
         System.out.print("[ ");
         for (int i = 0; i < array.length; i++) {
             array[i] = minRandom + random.nextInt(maxRandom - minRandom + 1);
@@ -61,7 +63,7 @@ public class Task2 {
         final Task2 ob = new Task2();
         ob.insertionSort(array);
         System.out.println();
-        System.out.println("отсортированно:");
+        System.out.println("Отсортированно:");
         System.out.print("[ ");
         printArray(array);
         System.out.print("]");
